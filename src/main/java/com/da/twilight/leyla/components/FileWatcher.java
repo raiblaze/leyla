@@ -53,12 +53,12 @@ public class FileWatcher implements Runnable{
                 
                 @Override
                 public FileVisitResult visitFileFailed(Path file, IOException exc) throws IOException {
-                    logger.log("Failed for trying to monitor file/dir:" + file);
+                    logger.err("Failed for trying to monitor file/dir:" + file);
                     return FileVisitResult.SKIP_SUBTREE;
                 } 
             });
         } catch(IOException ioe){
-            System.out.println("Error: " + ioe.toString());
+            logger.err("Error: " + ioe.toString());
             return ;
         }
         
@@ -97,7 +97,7 @@ public class FileWatcher implements Runnable{
                 bb.rewind();
                 fc.write(bb);
         } catch (IOException ex) {
-            System.out.println("exception in writing to offers file: "+ex);
+            logger.err("exception in writing to offers file: "+ex);
         }
     }
 
@@ -122,7 +122,7 @@ public class FileWatcher implements Runnable{
                     bb.flip();
             }
         } catch (IOException ex) {
-            System.out.println("exception in reading file: " + ex);
+            logger.err("exception in reading file: " + ex);
         }
     }
 

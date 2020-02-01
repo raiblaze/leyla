@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Properties;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -45,8 +46,12 @@ public class FileFXMLController implements Initializable, Loggable {
     @FXML
     private TextArea searchTxtarea;
     @FXML
+    private TextArea errTxtarea;
+    @FXML
     private TextField searchTxt;
 
+    private Properties prop;
+    
     private Thread watcherTask;
     /**
      * Initializes the controller class.
@@ -56,6 +61,15 @@ public class FileFXMLController implements Initializable, Loggable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
+        try {
+            prop = new Properties();
+            prop.load(getClass().getClassLoader().getResourceAsStream("application.properties"));
+        } catch (IOException ex) {
+            errTxtarea.appendText("Can't load application properties file!");
+            errTxtarea.appendText("Error: " + ex.toString());
+        }
+        
+        String workingDir = prop.getProperty("working.path");
         searchBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -64,7 +78,7 @@ public class FileFXMLController implements Initializable, Loggable {
                 Finder finder = new Finder("*" + searchStr + "*");
                 finder.setLogger(FileFXMLController.this);
                 try {
-                    Files.walkFileTree( Paths.get("."), finder);
+                    Files.walkFileTree( Paths.get(workingDir), finder);
                 } catch (IOException ex) {
                     Logger.getLogger(FileFXMLController.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -77,7 +91,7 @@ public class FileFXMLController implements Initializable, Loggable {
             public void handle(MouseEvent event) {
                 FileFXMLController.this.watchBtn.setDisable(true);
                 FileWatcher fw = new FileWatcher();
-                fw.setFolder(".");
+                fw.setFolder(workingDir);
                 fw.setLogger(FileFXMLController.this);
                 
                 watcherTask = new Thread(fw);
@@ -126,14 +140,17 @@ public class FileFXMLController implements Initializable, Loggable {
         });
     }
     
-    public void appendLog(String str){
-        searchTxtarea.appendText(str+"\n");
-    }
-
     @Override
     public void log(String msg) {
         Platform.runLater(() -> {
-            appendLog(msg);
+            searchTxtarea.appendText(msg + "\n");
+        });
+    }
+
+    @Override
+    public void err(String msg) {
+        Platform.runLater(() -> {
+            errTxtarea.appendText(msg + "\n");
         });
     }
 }

@@ -13,4 +13,5 @@ package com.da.twilight.leyla.ui;
  */
 public interface Loggable {
     public void log(String msg);
+    public void err(String msg);
 }

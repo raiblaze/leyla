@@ -84,7 +84,7 @@ public class Finder extends SimpleFileVisitor<Path> {
     @Override
     public FileVisitResult visitFileFailed(Path file,
             IOException exc) {
-        logger.log("Can't access file/dir: " + file.toString() + " - Error: " +exc.toString());
+        logger.err("Can't access file/dir: " + file.toString() + " - Error: " +exc.toString());
         return FileVisitResult.SKIP_SUBTREE;
     }
     

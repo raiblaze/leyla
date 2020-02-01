@@ -41,6 +41,7 @@ public class UI extends Application{
      */
     @Override
     public void start(Stage primaryStage) throws IOException{
+        
         Parent root = FXMLLoader.load(getClass().getResource("fxml/FileFXML.fxml"));
 
         //Scene scene = new Scene(root);
@@ -141,7 +142,7 @@ public class UI extends Application{
      */
     @Override
     public void stop(){
-        System.out.println("Stage is closing");
+        System.out.println("App is closing");
         System.exit(0);
     }
     
