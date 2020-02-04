@@ -9,11 +9,18 @@ package com.da.twilight.leyla.ui.fxml;
 
 import com.da.twilight.leyla.components.FileWatcher;
 import com.da.twilight.leyla.components.Finder;
+import com.da.twilight.leyla.components.TreeNode;
+import static com.da.twilight.leyla.components.TreeNode.createDirTree;
+import static com.da.twilight.leyla.components.TreeNode.renderDirectoryTree;
 import com.da.twilight.leyla.ui.Loggable;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Properties;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -43,6 +50,8 @@ public class FileFXMLController implements Initializable, Loggable {
     private Button watchBtn;
     @FXML
     private Button stopWatchBtn;
+    @FXML
+    private Button printTreeBtn;
     @FXML
     private TextArea searchTxtarea;
     @FXML
@@ -136,6 +145,24 @@ public class FileFXMLController implements Initializable, Loggable {
                         n = n.getParent();
                     }
                 }
+            }
+        });
+        
+        printTreeBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>(){
+            @Override
+            public void handle(MouseEvent event) {
+                File file = new File(workingDir);
+                TreeNode<File> DirTree = createDirTree(file);
+                String result = renderDirectoryTree(DirTree);
+                log(result);
+                /*
+                try {
+                    BufferedWriter bw = Files.newBufferedWriter( Paths.get("D:\\tree.txt"), StandardCharsets.UTF_16, StandardOpenOption.WRITE);
+                    bw.write(result);
+                } catch (IOException iox) {
+                    System.out.println("[FAILED] Error: " + iox.toString());
+                } 
+                */
             }
         });
     }
