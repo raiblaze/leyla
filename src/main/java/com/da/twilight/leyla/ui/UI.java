@@ -99,6 +99,7 @@ public class UI extends Application{
             
             Button closeBtn = new Button("X");
             closeBtn.setOnAction((evt) -> {
+                stage.close(); // <-- Make UI seem to be response faster and not stuck when clik button
                 Platform.exit();
             });
             
