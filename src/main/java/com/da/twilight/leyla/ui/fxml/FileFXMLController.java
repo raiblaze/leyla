@@ -13,14 +13,11 @@ import com.da.twilight.leyla.components.TreeNode;
 import static com.da.twilight.leyla.components.TreeNode.createDirTree;
 import static com.da.twilight.leyla.components.TreeNode.renderDirectoryTree;
 import com.da.twilight.leyla.ui.Loggable;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.Properties;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -30,8 +27,8 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseButton;
@@ -58,7 +55,9 @@ public class FileFXMLController implements Initializable, Loggable {
     private TextArea errTxtarea;
     @FXML
     private TextField searchTxt;
-
+    @FXML
+    private ComboBox searchLocationCb;
+    
     private Properties prop;
     
     private Thread watcherTask;
@@ -78,7 +77,7 @@ public class FileFXMLController implements Initializable, Loggable {
             errTxtarea.appendText("Error: " + ex.toString());
         }
         
-        String workingDir = prop.getProperty("working.path");
+        //String workingDir = prop.getProperty("working.path");
         searchBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -87,7 +86,7 @@ public class FileFXMLController implements Initializable, Loggable {
                 Finder finder = new Finder("*" + searchStr + "*");
                 finder.setLogger(FileFXMLController.this);
                 try {
-                    Files.walkFileTree( Paths.get(workingDir), finder);
+                    Files.walkFileTree( Paths.get( getCurrentDir() ), finder);
                 } catch (IOException ex) {
                     Logger.getLogger(FileFXMLController.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -100,7 +99,7 @@ public class FileFXMLController implements Initializable, Loggable {
             public void handle(MouseEvent event) {
                 FileFXMLController.this.watchBtn.setDisable(true);
                 FileWatcher fw = new FileWatcher();
-                fw.setFolder(workingDir);
+                fw.setFolder( getCurrentDir() );
                 fw.setLogger(FileFXMLController.this);
                 
                 watcherTask = new Thread(fw);
@@ -151,7 +150,7 @@ public class FileFXMLController implements Initializable, Loggable {
         printTreeBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent event) {
-                File file = new File(workingDir);
+                File file = new File( getCurrentDir() );
                 TreeNode<File> DirTree = createDirTree(file);
                 String result = renderDirectoryTree(DirTree);
                 log(result);
@@ -165,6 +164,25 @@ public class FileFXMLController implements Initializable, Loggable {
                 */
             }
         });
+        
+        searchLocationCb.getItems().addAll(
+                "C:\\Users\\ShadowWalker\\Downloads",
+                "H:\\"
+        );
+        searchLocationCb.setVisibleRowCount(4);
+        searchLocationCb.setValue("H:\\");
+        
+        /* Roll-back to old value when value change to new value */
+        /*searchLocationCb.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal)->{
+            if(newVal != null && !newVal.equals("Two")){
+                Platform.runLater(() -> searchLocationCb.setValue(oldVal));
+            }
+        }); */
+        
+    }
+    
+    public String getCurrentDir(){
+        return searchLocationCb.getValue().toString();
     }
     
     @Override

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextArea?>
@@ -37,6 +38,7 @@
           </Tab>
         </tabs>
       </TabPane>
-      <Button fx:id="printTreeBtn" layoutX="344.0" layoutY="19.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="74.0" text="Print Tree" />
+      <Button fx:id="printTreeBtn" layoutX="578.0" layoutY="19.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="74.0" text="Print Tree" />
+      <ComboBox fx:id="searchLocationCb" layoutX="294.0" layoutY="23.0" prefHeight="25.0" prefWidth="229.0" />
    </children>
 </AnchorPane>
