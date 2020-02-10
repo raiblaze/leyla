@@ -83,7 +83,7 @@ public class FileFXMLController implements Initializable, Loggable {
             @Override
             public void handle(MouseEvent event) {
                 searchTxtarea.clear();
-                String searchStr = searchTxt.getText();
+                String searchStr = searchTxt.getText().trim();
                 Finder finder = new Finder("*" + searchStr + "*");
                 finder.setLogger(FileFXMLController.this);
                 try {
