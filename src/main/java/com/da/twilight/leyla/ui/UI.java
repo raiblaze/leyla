@@ -54,9 +54,10 @@ public class UI extends Application{
         
         // Fix not Resize problem of content AnchorPane. Force changing when borderPane height change
         AnchorPane anchor = ((AnchorPane)root);
-        borderPane.heightProperty().addListener((ObservableValue<? extends Number> ov, Number t, Number t1) -> {
-            anchor.prefHeightProperty()
-                    .set( t1.doubleValue() - windowsDecorationBar.getHeight() ); // - 25 for toolbar header
+        borderPane.heightProperty().addListener(
+                (ObservableValue<? extends Number> ov, Number t, Number t1) -> {
+                    anchor.prefHeightProperty()
+                            .set( t1.doubleValue() - windowsDecorationBar.getHeight() ); // - 25 for toolbar header
         });
         
         primaryStage.setScene(new Scene( borderPane ));
