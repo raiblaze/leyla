@@ -6,14 +6,21 @@
 
 package com.da.twilight.leyla;
 
+import com.da.twilight.helper.TwilightApplication;
+import com.da.twilight.helper.TwilightInstance;
 import com.da.twilight.leyla.ui.UI;
 
 /**
  *
  * @author ShadowWalker
  */
-public class App {
+public class App implements TwilightInstance {
     public static void main(String[] args) {
+        TwilightApplication.run( App.class, args);
+    }
+
+    @Override
+    public void launch(String[] args) {
         UI.main(args);
     }
 }
