@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 class DecorationButtons extends HBox {
 
     public DecorationButtons() {
-        double prefHeight = 30.0;
+        double prefHeight = 26.0;
         
         Button minBtn = new Button("  🗕  ");
         minBtn.setPrefHeight( prefHeight );

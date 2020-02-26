@@ -4,3 +4,234 @@
 [INFO ] 2020-02-23 23:19:56.604 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
 [INFO ] 2020-02-23 23:19:56.604 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
 [INFO ] 2020-02-23 23:19:56.604 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-23 23:23:10.150 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-23 23:23:10.150 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-23 23:23:10.150 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-23 23:23:10.150 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-23 23:23:10.150 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-23 23:23:10.150 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-23 23:23:49.231 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-23 23:23:49.231 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-23 23:23:49.231 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-23 23:23:49.246 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-23 23:23:49.246 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-23 23:23:49.246 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-23 23:23:58.378 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-23 23:23:58.381 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-23 23:23:58.382 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-23 23:23:58.387 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ YES ]
+[INFO ] 2020-02-23 23:23:58.387 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ NO ]
+[WARN ] 2020-02-23 23:23:58.387 [main] c.d.t.h.TwilightApplication - Considering turn off single instance application by option {} or turn off application instance which is running on your system
+[ERROR] 2020-02-23 23:23:58.387 [main] c.d.t.h.TwilightApplication - Another application instance's running on your system
+[INFO ] 2020-02-25 22:13:32.676 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:13:32.676 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:13:32.676 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:13:32.676 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:13:32.676 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:13:32.676 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:20:09.721 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:20:09.721 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:20:09.721 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:20:09.737 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:20:09.737 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:20:09.737 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:21:28.876 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:21:28.876 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:21:28.876 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:21:28.892 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:21:28.892 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:21:28.892 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:23:43.100 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:23:43.103 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:23:43.104 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:23:43.108 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ YES ]
+[INFO ] 2020-02-25 22:23:43.109 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ NO ]
+[WARN ] 2020-02-25 22:23:43.109 [main] c.d.t.h.TwilightApplication - Considering turn off single instance application by option {} or turn off application instance which is running on your system
+[ERROR] 2020-02-25 22:23:43.109 [main] c.d.t.h.TwilightApplication - Another application instance's running on your system
+[INFO ] 2020-02-25 22:23:54.795 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:23:54.811 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:23:54.811 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:23:54.811 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:23:54.811 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:23:54.811 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:29:22.714 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:29:22.729 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:29:22.729 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:29:22.729 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:29:22.729 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:29:22.729 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:30:18.071 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:30:18.071 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:30:18.071 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:30:18.071 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:30:18.071 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:30:18.071 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:35:48.692 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:35:48.696 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:35:48.697 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:35:48.701 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ YES ]
+[INFO ] 2020-02-25 22:35:48.702 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ NO ]
+[WARN ] 2020-02-25 22:35:48.702 [main] c.d.t.h.TwilightApplication - Considering turn off single instance application by option {} or turn off application instance which is running on your system
+[ERROR] 2020-02-25 22:35:48.702 [main] c.d.t.h.TwilightApplication - Another application instance's running on your system
+[INFO ] 2020-02-25 22:36:00.425 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:36:00.441 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:36:00.441 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:36:00.441 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:36:00.441 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:36:00.441 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:40:23.595 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:40:23.595 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:40:23.595 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:40:23.595 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:40:23.595 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:40:23.595 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:41:15.726 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:41:15.726 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:41:15.726 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:41:15.742 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:41:15.742 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:41:15.742 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:44:22.297 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:44:22.297 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:44:22.297 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:44:22.313 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:44:22.313 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:44:22.313 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:45:12.704 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:45:12.704 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:45:12.704 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:45:12.704 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:45:12.704 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:45:12.704 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:47:20.915 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:47:20.915 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:47:20.915 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:47:20.915 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:47:20.915 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:47:20.915 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:48:19.282 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:48:19.282 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:48:19.282 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:48:19.297 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:48:19.297 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:48:19.297 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:49:23.221 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:49:23.221 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:49:23.221 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:49:23.221 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:49:23.221 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:49:23.237 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:52:46.531 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:52:46.531 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:52:46.531 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:52:46.547 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:52:46.547 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:52:46.547 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:55:46.239 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:55:46.239 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:55:46.239 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:55:46.239 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:55:46.239 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:55:46.239 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:56:25.322 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:56:25.322 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:56:25.322 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:56:25.322 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:56:25.322 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:56:25.322 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 22:57:04.556 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 22:57:04.556 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 22:57:04.556 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 22:57:04.571 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 22:57:04.571 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 22:57:04.571 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 23:03:10.978 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 23:03:10.978 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 23:03:10.978 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 23:03:10.978 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 23:03:10.978 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 23:03:10.978 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 23:39:24.669 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 23:39:24.684 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 23:39:24.684 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 23:39:24.684 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 23:39:24.684 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 23:39:24.684 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 23:50:33.579 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 23:50:33.579 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 23:50:33.579 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 23:50:33.595 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 23:50:33.595 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 23:50:33.595 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 23:52:45.217 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 23:52:45.233 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 23:52:45.233 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 23:52:45.233 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 23:52:45.233 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 23:52:45.233 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 23:53:46.385 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 23:53:46.385 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 23:53:46.385 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 23:53:46.385 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 23:53:46.385 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 23:53:46.385 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-25 23:54:35.094 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-25 23:54:35.110 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-25 23:54:35.110 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-25 23:54:35.110 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-25 23:54:35.110 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-25 23:54:35.110 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-26 22:40:13.609 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-26 22:40:13.609 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-26 22:40:13.609 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-26 22:40:13.609 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-26 22:40:13.609 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-26 22:40:13.609 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-26 22:53:06.158 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-26 22:53:06.165 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-26 22:53:06.165 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-26 22:53:06.165 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-26 22:53:06.165 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-26 22:53:06.165 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-26 23:00:38.137 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-26 23:00:38.137 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-26 23:00:38.137 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-26 23:00:38.137 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-26 23:00:38.137 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-26 23:00:38.137 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-26 23:01:36.026 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-26 23:01:36.042 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-26 23:01:36.042 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-26 23:01:36.042 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-26 23:01:36.042 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-26 23:01:36.042 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-02-26 23:05:41.383 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-26 23:05:41.383 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-26 23:05:41.383 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-26 23:05:41.383 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-26 23:05:41.383 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-26 23:05:41.383 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[DEBUG] 2020-02-26 23:06:11.789 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Player is closing
+[INFO ] 2020-02-26 23:09:32.188 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-26 23:09:32.192 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-26 23:09:32.192 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-26 23:09:32.197 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ YES ]
+[INFO ] 2020-02-26 23:09:32.197 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ NO ]
+[WARN ] 2020-02-26 23:09:32.197 [main] c.d.t.h.TwilightApplication - Considering turn off single instance application by option {} or turn off application instance which is running on your system
+[ERROR] 2020-02-26 23:09:32.197 [main] c.d.t.h.TwilightApplication - Another application instance's running on your system
+[DEBUG] 2020-02-26 23:10:21.841 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Player is closing
+[INFO ] 2020-02-26 23:10:45.728 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-26 23:10:45.728 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-26 23:10:45.728 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-26 23:10:45.728 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-26 23:10:45.728 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-26 23:10:45.728 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[DEBUG] 2020-02-26 23:11:22.487 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Player is closing
+[INFO ] 2020-02-26 23:12:52.750 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-26 23:12:52.750 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-26 23:12:52.750 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-26 23:12:52.750 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-26 23:12:52.750 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-26 23:12:52.750 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[DEBUG] 2020-02-26 23:13:53.892 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Player is closing
+[INFO ] 2020-02-26 23:13:55.039 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing

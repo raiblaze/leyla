@@ -9,6 +9,7 @@ package com.da.twilight.leyla.ui.fxml;
 
 import com.da.twilight.leyla.components.FileWatcher;
 import com.da.twilight.leyla.components.Finder;
+import com.da.twilight.leyla.components.Player;
 import com.da.twilight.leyla.components.TreeNode;
 import static com.da.twilight.leyla.components.TreeNode.createDirTree;
 import static com.da.twilight.leyla.components.TreeNode.renderDirectoryTree;
@@ -20,19 +21,23 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 /**
  * FXML Controller class
@@ -41,6 +46,8 @@ import javafx.scene.input.MouseEvent;
  */
 public class FileFXMLController implements Initializable, Loggable {
 
+    private Logger LOGGER = LoggerFactory.getLogger( FileFXMLController.class );
+    
     @FXML
     private Button searchBtn;
     @FXML
@@ -88,25 +95,27 @@ public class FileFXMLController implements Initializable, Loggable {
                 try {
                     Files.walkFileTree( Paths.get( getCurrentDir() ), finder);
                 } catch (IOException ex) {
-                    Logger.getLogger(FileFXMLController.class.getName()).log(Level.SEVERE, null, ex);
+                    LOGGER.error("Error while walking tree err={}",ex.toString());
                 }
                 finder.done();
             }
         });
         
+        // WATCHING SERVICE BUTTON for logging file change on console
         watchBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                 FileFXMLController.this.watchBtn.setDisable(true);
                 FileWatcher fw = new FileWatcher();
                 fw.setFolder( getCurrentDir() );
-                fw.setLogger(FileFXMLController.this);
+                fw.setLogger( FileFXMLController.this );
                 
                 watcherTask = new Thread(fw);
+                watcherTask.setDaemon(true);   // this line for deamon app. when app's closed. this task running on another thread close too 
                 watcherTask.start();
             }
         });
-        
+        // STOP WATCHING SERVICE BUTTON
         stopWatchBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -138,6 +147,26 @@ public class FileFXMLController implements Initializable, Loggable {
                             }
 
                             searchTxtarea.selectRange(lineBreak1, lineBreak2);
+                            
+                            // open media file for mp4 because JFX only support mp4 container
+                            if(searchTxtarea.getSelectedText().trim().contains(".mp4")){
+                                Stage stage = new Stage();
+                                File file = new File( searchTxtarea.getSelectedText().trim() );
+
+                                Player player = new Player( file.toURI().toString());
+                                
+                                // Adding player to the Scene 
+                                Scene scene = new Scene(player, 1920/2, 1080/2, Color.BLACK);
+                                stage.setScene(scene);  
+                                stage.setTitle("Playing video");  
+                                stage.show(); 
+                                
+                                stage.setOnCloseRequest(evt -> {
+                                    player.pause();
+                                    LOGGER.debug("Player is closing");
+                                });
+                            }
+                            
                             event.consume();
                             break;
                         }

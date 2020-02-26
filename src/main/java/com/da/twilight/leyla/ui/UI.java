@@ -14,19 +14,21 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ToolBar;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 
  * @author ShadowWalker
  */
 public class UI extends Application{
-
+    
+    private final Logger LOGGER = LoggerFactory.getLogger( UI.class );
     
     /**
      * Start primary stage of JavaFX UI
@@ -75,7 +77,7 @@ public class UI extends Application{
      */
     @Override
     public void stop(){
-        System.out.println("App is closing");
+        LOGGER.info("App is closing");
         System.exit(0);
     }
     

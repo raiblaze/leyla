@@ -26,7 +26,7 @@ public class WindowsDecorationBar extends ToolBar  {
     
     public WindowsDecorationBar(){
         this.setStyle("-fx-background-color: #5b92ff;");
-        int toolBarHeight = 30;
+        int toolBarHeight = 26;
         this.setPrefHeight( toolBarHeight );
         this.setMinHeight( toolBarHeight );
         this.setMaxHeight( toolBarHeight );
@@ -38,7 +38,7 @@ public class WindowsDecorationBar extends ToolBar  {
         icon.setFitWidth( 18.0 );
         
         Label title = new Label("Leyla - File management system");
-        title.setStyle("-fx-text-fill:#fff;");
+        title.setStyle("-fx-text-fill:#fff; -fx-font-size: 14;");
         title.setPadding(new Insets(5, 10, 5, 10));
         
         HBox emptySpace = new HBox(); // For let toolbar's conponents flow to right side of toolbar
