@@ -235,3 +235,71 @@
 [INFO ] 2020-02-26 23:12:52.750 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
 [DEBUG] 2020-02-26 23:13:53.892 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Player is closing
 [INFO ] 2020-02-26 23:13:55.039 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-02-26 23:18:48.939 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-02-26 23:18:48.939 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-02-26 23:18:48.939 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-02-26 23:18:48.954 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-02-26 23:18:48.954 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-02-26 23:18:48.954 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[DEBUG] 2020-02-26 23:19:41.545 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Player is closing
+[DEBUG] 2020-02-26 23:19:46.527 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Player is closing
+[INFO ] 2020-02-26 23:19:47.457 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-01 13:18:49.360 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-01 13:18:49.360 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-01 13:18:49.375 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-01 13:18:49.375 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-01 13:18:49.375 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-01 13:18:49.375 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-01 13:19:30.662 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-01 13:19:36.917 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-01 13:19:36.933 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-01 13:19:36.933 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-01 13:19:36.933 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-01 13:19:36.933 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-01 13:19:36.933 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-01 13:19:58.032 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-01 13:22:17.383 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-01 13:22:17.383 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-01 13:22:17.383 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-01 13:22:17.398 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-01 13:22:17.398 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-01 13:22:17.398 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-01 13:22:46.895 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-01 13:23:48.244 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-01 13:23:48.244 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-01 13:23:48.244 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-01 13:23:48.260 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-01 13:23:48.260 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-01 13:23:48.260 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-01 13:25:49.184 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-01 13:25:49.184 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-01 13:25:49.199 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-01 13:25:49.199 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-01 13:25:49.199 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-01 13:25:49.199 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-01 13:26:50.297 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-01 13:27:12.894 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-01 13:27:12.894 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-01 13:27:12.894 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-01 13:27:12.910 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-01 13:27:12.910 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-01 13:27:12.910 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-01 13:27:51.801 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-01 13:27:58.076 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-01 13:27:58.076 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-01 13:27:58.076 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-01 13:27:58.076 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-01 13:27:58.076 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-01 13:27:58.076 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[DEBUG] 2020-03-01 13:28:40.468 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Player is closing
+[INFO ] 2020-03-01 13:28:41.688 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-01 13:30:10.546 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-01 13:30:10.546 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-01 13:30:10.546 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-01 13:30:10.562 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-01 13:30:10.562 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-01 13:30:10.562 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-01 13:30:18.647 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Opening file: H:\FHD Hentai\[UNCEN] Mama.Puri.Series.1080P.FHD\[HF]Mama.Puri.Episode.02.2017.1080p.FHD-HentaiFreak[HF14111702].mp4
+[DEBUG] 2020-03-01 13:30:22.677 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Player is closing
+[INFO ] 2020-03-01 13:30:25.180 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Opening directory: H:\FHD Hentai\[UNCEN] Boku Dake no Hentai Kanojo + Motto (BD 1080p FLAC)[BOOTLEG]
+[INFO ] 2020-03-01 13:30:42.886 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing

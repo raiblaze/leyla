@@ -14,6 +14,7 @@ import com.da.twilight.leyla.components.TreeNode;
 import static com.da.twilight.leyla.components.TreeNode.createDirTree;
 import static com.da.twilight.leyla.components.TreeNode.renderDirectoryTree;
 import com.da.twilight.leyla.ui.Loggable;
+import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -27,6 +28,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
@@ -131,7 +133,7 @@ public class FileFXMLController implements Initializable, Loggable {
             @Override
             public void handle(MouseEvent event) {
                 if (event.getButton() == MouseButton.PRIMARY) {
-
+                    
                     // check, if click was inside the content area
                     Node n = event.getPickResult().getIntersectedNode();
                     while (n != searchTxtarea) {
@@ -148,25 +150,51 @@ public class FileFXMLController implements Initializable, Loggable {
 
                             searchTxtarea.selectRange(lineBreak1, lineBreak2);
                             
-                            // open media file for mp4 because JFX only support mp4 container
-                            if(searchTxtarea.getSelectedText().trim().contains(".mp4")){
-                                Stage stage = new Stage();
-                                File file = new File( searchTxtarea.getSelectedText().trim() );
+                            // only open file | directory when double click
+                            if(event.getClickCount() > 1 ){
+                                String selectedText = searchTxtarea.getSelectedText().trim();
+                                File file = new File( selectedText );
 
-                                Player player = new Player( file.toURI().toString());
-                                
-                                // Adding player to the Scene 
-                                Scene scene = new Scene(player, 1920/2, 1080/2, Color.BLACK);
-                                stage.setScene(scene);  
-                                stage.setTitle("Playing video");  
-                                stage.show(); 
-                                
-                                stage.setOnCloseRequest(evt -> {
-                                    player.pause();
-                                    LOGGER.debug("Player is closing");
-                                });
+                                // open media file for mp4 because JFX only support mp4 container
+                                if( file.isFile()){
+                                    LOGGER.info("Opening file: {}", file.getAbsolutePath());
+                                    if(selectedText.contains(".mp4")){
+                                        Stage stage = new Stage();
+
+                                        Player player = new Player( file.toURI().toString());
+
+                                        // Adding player to the Scene 
+                                        Scene scene = new Scene(player, 1920/2, 1080/2, Color.BLACK);
+                                        stage.setScene(scene);  
+                                        stage.setTitle("Playing video");  
+                                        stage.show(); 
+
+                                        stage.setOnCloseRequest(evt -> {
+                                            player.pause();
+                                            LOGGER.debug("Player is closing");
+                                        });
+                                    } else {
+                                        Alert alert = new Alert(Alert.AlertType.ERROR);
+                                        alert.setTitle("Error while open file ");
+                                        alert.setHeaderText("File open error");
+                                        alert.setContentText("File does not support for opening!");
+                                        alert.show();
+                                    }
+                                } else if( file.isDirectory() ) {
+                                    LOGGER.info("Opening directory: {}", file.getAbsolutePath());
+                                    try {
+                                        Desktop.getDesktop().open( file );
+                                    } catch (IOException ex) {
+                                        LOGGER.error("Directory does not exist! err=", ex.toString());
+
+                                        Alert alert = new Alert(Alert.AlertType.ERROR);
+                                        alert.setTitle("Error while open directory ");
+                                        alert.setHeaderText("Directory open error");
+                                        alert.setContentText("Directory does not exist! ");
+                                    }
+                                }
                             }
-                            
+
                             event.consume();
                             break;
                         }
