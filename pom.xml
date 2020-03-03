@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.da.twilight</groupId>
     <artifactId>leyla</artifactId>
-    <version>0.8.0</version>
+    <version>0.9.0</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,7 +16,7 @@
     <dependency>
         <groupId>com.da.twilight</groupId>
         <artifactId>jfx-template</artifactId>
-        <version>1.2.0</version>
+        <version>1.2.1</version>
     </dependency>
         
     </dependencies>

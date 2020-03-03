@@ -33,6 +33,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
@@ -86,20 +88,20 @@ public class FileFXMLController implements Initializable, Loggable {
             errTxtarea.appendText("Error: " + ex.toString());
         }
         
+        searchTxt.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>(){
+            @Override
+            public void handle(KeyEvent event) {
+                if(event.getCode() == KeyCode.ENTER){
+                    searchByString( searchTxt.getText().trim() );
+                }
+            }
+        });
+        
         //String workingDir = prop.getProperty("working.path");
         searchBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                searchTxtarea.clear();
-                String searchStr = searchTxt.getText().trim();
-                Finder finder = new Finder("*" + searchStr + "*");
-                finder.setLogger(FileFXMLController.this);
-                try {
-                    Files.walkFileTree( Paths.get( getCurrentDir() ), finder);
-                } catch (IOException ex) {
-                    LOGGER.error("Error while walking tree err={}",ex.toString());
-                }
-                finder.done();
+                searchByString( searchTxt.getText().trim() );
             }
         });
         
@@ -236,6 +238,26 @@ public class FileFXMLController implements Initializable, Loggable {
             }
         }); */
         
+        // auto focus TextField when application start
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                searchTxt.requestFocus();
+            }
+        });
+    }
+    
+    private void searchByString(String searchString){
+        searchTxtarea.clear();
+        
+        Finder finder = new Finder("*" + searchString + "*");
+        finder.setLogger(FileFXMLController.this);
+        try {
+            Files.walkFileTree( Paths.get( getCurrentDir() ), finder);
+        } catch (IOException ex) {
+            LOGGER.error("Error while walking tree err={}",ex.toString());
+        }
+        finder.done();
     }
     
     public String getCurrentDir(){
