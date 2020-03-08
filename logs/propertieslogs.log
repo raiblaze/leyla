@@ -352,3 +352,19 @@
 [INFO ] 2020-03-04 00:28:13.308 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
 [INFO ] 2020-03-04 00:28:13.308 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
 [INFO ] 2020-03-04 00:28:44.855 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-04 00:31:31.316 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-04 00:31:31.316 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-04 00:31:31.332 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-04 00:31:31.332 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-04 00:31:31.332 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-04 00:31:31.332 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-04 00:32:02.604 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Opening directory: H:\FHD Hentai\[?DarkArt?] Lovely Heart
+[INFO ] 2020-03-04 00:32:17.372 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-09 00:12:43.730 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-09 00:12:43.734 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-09 00:12:43.735 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-09 00:12:43.741 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-09 00:12:43.741 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-09 00:12:43.741 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-09 00:12:58.378 [JavaFX Application Thread] c.d.t.l.u.f.FileFXMLController - Opening file: H:\FHD Hentai\[UNCEN] Boku Dake no Hentai Kanojo + Motto (BD 1080p FLAC)[BOOTLEG]\Boku Dake no Hentai Kanojo Motto (BD 1080p FLAC) [FCA43CAB].mkv
+[INFO ] 2020-03-09 00:13:10.074 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing

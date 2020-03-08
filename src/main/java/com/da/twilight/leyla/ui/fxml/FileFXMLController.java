@@ -160,7 +160,7 @@ public class FileFXMLController implements Initializable, Loggable {
                                 // open media file for mp4 because JFX only support mp4 container
                                 if( file.isFile()){
                                     LOGGER.info("Opening file: {}", file.getAbsolutePath());
-                                    if(selectedText.contains(".mp4")){
+                                    /*if(selectedText.contains(".mp4")){
                                         Stage stage = new Stage();
 
                                         Player player = new Player( file.toURI().toString());
@@ -174,14 +174,21 @@ public class FileFXMLController implements Initializable, Loggable {
                                         stage.setOnCloseRequest(evt -> {
                                             player.pause();
                                             LOGGER.debug("Player is closing");
-                                        });
-                                    } else {
+                                        }); 
+                                    } else {} */
+                                    
+                                    // open file with default application
+                                    Desktop desktop = Desktop.getDesktop();
+                                    try{
+                                        desktop.open( file );
+                                    }catch(IOException ioe){
                                         Alert alert = new Alert(Alert.AlertType.ERROR);
                                         alert.setTitle("Error while open file ");
                                         alert.setHeaderText("File open error");
                                         alert.setContentText("File does not support for opening!");
-                                        alert.show();
+                                        alert.show(); 
                                     }
+                                    
                                 } else if( file.isDirectory() ) {
                                     LOGGER.info("Opening directory: {}", file.getAbsolutePath());
                                     try {
