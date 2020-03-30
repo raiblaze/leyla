@@ -31,7 +31,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextArea fx:id="errTxtarea" editable="false" prefHeight="378.0" prefWidth="896.0" style="-fx-control-inner-background: #000; -fx-text-fill: #FFF;" />
+                        <TextArea fx:id="errTxtarea" editable="false" prefHeight="378.0" prefWidth="896.0" style="-fx-control-inner-background: #000; -fx-text-fill: #FFF;" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                      </children>
                   </AnchorPane>
             </content>

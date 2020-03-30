@@ -9,7 +9,6 @@ package com.da.twilight.leyla.ui.fxml;
 
 import com.da.twilight.leyla.components.FileWatcher;
 import com.da.twilight.leyla.components.Finder;
-import com.da.twilight.leyla.components.Player;
 import com.da.twilight.leyla.components.TreeNode;
 import static com.da.twilight.leyla.components.TreeNode.createDirTree;
 import static com.da.twilight.leyla.components.TreeNode.renderDirectoryTree;
@@ -27,7 +26,6 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -37,8 +35,6 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
-import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,7 +46,7 @@ import org.slf4j.LoggerFactory;
  */
 public class FileFXMLController implements Initializable, Loggable {
 
-    private Logger LOGGER = LoggerFactory.getLogger( FileFXMLController.class );
+    private final Logger LOGGER = LoggerFactory.getLogger( FileFXMLController.class );
     
     @FXML
     private Button searchBtn;

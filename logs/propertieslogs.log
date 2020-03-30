@@ -605,3 +605,18 @@
 [DEBUG] 2020-03-09 11:27:52.363 [JavaFX Application Thread] c.d.t.l.u.s.DecorationButtons - Closing application window
 [DEBUG] 2020-03-09 11:28:21.213 [AWT-EventQueue-0] c.d.t.l.u.s.DecorationButtons - Showing application window
 [INFO ] 2020-03-09 11:28:23.113 [JavaFX Application Thread] c.d.t.l.u.UI - App is closing
+[INFO ] 2020-03-30 22:31:29.903 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-30 22:31:29.919 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-30 22:31:29.919 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-30 22:31:29.925 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-30 22:31:29.925 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-30 22:31:29.925 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[INFO ] 2020-03-30 22:41:30.383 [main] c.d.t.h.TwilightApplication - Starting Twilight application ....
+[INFO ] 2020-03-30 22:41:30.402 [main] c.d.t.h.TwilightApplication - Loading application.properties file
+[INFO ] 2020-03-30 22:41:30.403 [main] c.d.t.h.TwilightApplication - Single instance application checking
+[INFO ] 2020-03-30 22:41:30.409 [main] c.d.t.h.TwilightApplication - 	+ Is another instance application running 	[ NO ]
+[INFO ] 2020-03-30 22:41:30.410 [main] c.d.t.h.TwilightApplication - 	+ Allowing Starting application 		[ YES ]
+[INFO ] 2020-03-30 22:41:30.410 [main] c.d.t.h.TwilightApplication - Starting main application class [com.da.twilight.leyla.App] 
+[DEBUG] 2020-03-30 22:54:19.612 [JavaFX Application Thread] c.d.t.l.u.s.DecorationButtons - Closing application window
+[DEBUG] 2020-03-30 22:54:21.448 [AWT-EventQueue-0] c.d.t.l.u.s.DecorationButtons - Showing application window
+[DEBUG] 2020-03-30 22:54:40.577 [JavaFX Application Thread] c.d.t.l.u.s.DecorationButtons - Closing application window
