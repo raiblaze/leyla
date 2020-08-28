@@ -28,13 +28,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -62,8 +63,12 @@ public class FileFXMLController implements Initializable, Loggable {
     private TextArea errTxtarea;
     @FXML
     private TextField searchTxt;
+    
     @FXML
-    private ComboBox searchLocationCb;
+    private Button dirChooserBtn;
+    
+    @FXML
+    private TextField searchLocationTxt;
     
     private Properties prop;
     
@@ -227,12 +232,17 @@ public class FileFXMLController implements Initializable, Loggable {
             }
         });
         
-        searchLocationCb.getItems().addAll(
-                "C:\\Users\\ShadowWalker\\Downloads",
-                "H:\\"
-        );
-        searchLocationCb.setVisibleRowCount(4);
-        searchLocationCb.setValue("H:\\");
+        searchLocationTxt.setText(new File(".").getAbsolutePath());
+        dirChooserBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent t) {
+                Stage curStage = ( Stage ) dirChooserBtn.getScene().getWindow();
+                DirectoryChooser dc = new DirectoryChooser(); 
+                dc.setInitialDirectory(new File("."));
+                File selectedDirectory = dc.showDialog(curStage);
+                searchLocationTxt.setText( selectedDirectory.getAbsolutePath() );
+            }
+        });
         
         /* Roll-back to old value when value change to new value */
         /*searchLocationCb.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal)->{
@@ -264,7 +274,7 @@ public class FileFXMLController implements Initializable, Loggable {
     }
     
     public String getCurrentDir(){
-        return searchLocationCb.getValue().toString();
+        return searchLocationTxt.getText();
     }
     
     @Override
