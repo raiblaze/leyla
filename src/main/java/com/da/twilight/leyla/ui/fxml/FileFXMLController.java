@@ -233,7 +233,7 @@ public class FileFXMLController implements Initializable, Loggable {
         });
         
         searchLocationTxt.setText(new File(".").getAbsolutePath());
-        dirChooserBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+        dirChooserBtn.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent t) {
                 Stage curStage = ( Stage ) dirChooserBtn.getScene().getWindow();
