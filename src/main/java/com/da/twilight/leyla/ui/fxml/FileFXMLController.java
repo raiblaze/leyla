@@ -99,6 +99,7 @@ public class FileFXMLController implements Initializable, Loggable {
         });
         
         //String workingDir = prop.getProperty("working.path");
+        // SEARCHING THE STRING
         searchBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -261,16 +262,41 @@ public class FileFXMLController implements Initializable, Loggable {
     }
     
     private void searchByString(String searchString){
-        searchTxtarea.clear();
         
-        Finder finder = new Finder("*" + searchString + "*");
-        finder.setLogger(FileFXMLController.this);
-        try {
-            Files.walkFileTree( Paths.get( getCurrentDir() ), finder);
-        } catch (IOException ex) {
-            LOGGER.error("Error while walking tree err={}",ex.toString());
-        }
-        finder.done();
+        // Searching main task
+        final Thread mainTask = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                searchTxtarea.clear();
+        
+                Finder finder = new Finder("*" + searchString + "*");
+                finder.setLogger(FileFXMLController.this);
+                try {
+                    Files.walkFileTree( Paths.get( getCurrentDir() ), finder);
+                } catch (IOException ex) {
+                    LOGGER.error("Error while walking tree err={}",ex.toString());
+                }
+                finder.done();
+            }
+        });
+        mainTask.start();
+        
+        // Searching indicator task.
+        Thread indicatorTask = new Thread(() -> {
+            while( mainTask.isAlive() ){
+                Platform.runLater(() -> {
+                    searchBtn.setDisable(true);
+                });
+                
+                try {
+                    Thread.sleep(500L);
+                } catch (InterruptedException ex) {}
+            }
+            Platform.runLater(() -> {
+                searchBtn.setDisable(false);
+            });
+        });
+        indicatorTask.start();
     }
     
     public String getCurrentDir(){
